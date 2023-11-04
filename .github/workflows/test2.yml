@@ -17,7 +17,7 @@ jobs:
         uses: crazy-max/ghaction-docker-meta@v1
         with:
           images: kwangko/node-js-ci
-          tag-semver: |
+          tag-semver: |                         #이미지 이름 뒤에 들어갈 버전 정보
             {{version}}
             {{major}}.{{minor}}
       - name: Set up QEMU
